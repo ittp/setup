@@ -5,3 +5,6 @@ echo '{"user": {"id": 1, "name": "Cameron"}}' | jq '{ name: .user.name }'
 
 
 jq -r '[(.dependencies, .devDependencies) | keys] | flatten | length' package.json
+
+
+
